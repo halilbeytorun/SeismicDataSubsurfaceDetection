@@ -1,0 +1,61 @@
+
+What have we done?
+.segy file is parsed as a 2D matrix with amplitudes. ('604_CVA_16cmps.segy') (sgy2Matrix.py file, can find in the group)
+We summed amplitudes at each time increment and results is as follows:
+    There is a curve shaped pattern.
+    Also there is negative values? What is the meaning of that?
+
+9557.788008625037
+10253.734891385102
+11061.853951776233
+12036.249598884257
+13021.82007853093
+13901.149004499457
+14621.737686980277
+15385.152731536335
+16012.506092760945
+-10718.08462999505
+-23047.388195696636
+-10425.020730862743
+16012.570253257407
+15603.496981763172
+15076.000081844475
+15091.429836496596
+15315.019316089449
+15341.079390304454
+15022.773851553728
+14154.989356982638
+13119.445660855257
+
+Should test on more datasets.
+
+
+
+
+
+
+
+
+
+
+Gorev dagilimi:
+Parse etmek
+Cluster yapmak
+Velocity calculation.
+Raporlamak.
+
+Oguz
+
+Halil
+
+Cem
+
+
+
+
+What is NMO and CMP in this literature? FWI?
+https://sepwww.stanford.edu/sep/prof/iei/vdmo/paper_html/node3.html
+
+
+CNN algorithm.. Should read the article.
+Automatic velocity picking with convolutional neural networks
