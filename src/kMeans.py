@@ -1,4 +1,4 @@
-import testParse
+import sgy2Matrix
 import numpy as np
 from sklearn.cluster import KMeans
 import sys
@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 
 filename = '../data/604_CVA_16cmps.segy'
 #filename = '../data/n708_CVA_16cmps.segy'
-myMatrix, SampleIntervalNumber = testParse.parseSegy(filename)
+myMatrix, SampleIntervalNumber = sgy2Matrix.parseSegy(filename)
 
 print(myMatrix.shape)
 ColumnSummed = myMatrix.sum(axis=1)
