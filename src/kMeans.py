@@ -100,6 +100,8 @@ from sklearn.datasets import load_digits
 data, labels = load_digits(return_X_y=True)
 data = ColumnSummed
 (n_samples, n_features), n_digits = data.shape, np.unique(labels).size
+n_digits = 8
+
 
 print(f"# digits: {n_digits}; # samples: {n_samples}; # features {n_features}")
 print(data.shape)
@@ -256,8 +258,8 @@ plt.scatter(
     zorder=10,
 )
 plt.title(
-    "K-means clustering on the digits dataset (PCA-reduced data)\n"
-    "Centroids are marked with white cross"
+    "K-means clustering on the seismic reflection dataset (PCA-reduced data)\n"
+    f"Centroids are marked with white cross, k = {n_digits}"
 )
 plt.xlim(x_min, x_max)
 plt.ylim(y_min, y_max)
